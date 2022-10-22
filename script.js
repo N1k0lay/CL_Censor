@@ -5,7 +5,7 @@ const censor = () => {
             library.push([str1, str2]);
         } else {
             library.map(n => {
-                str1 = str1.replace(new RegExp(n[0], 'g'), n[1]);
+                str1 = str1.replaceAll(new RegExp(n[0], 'g'), n[1]);
             })
             return str1;
         }
